@@ -1,0 +1,4 @@
+server:
+  port: 7147
+AliYunSignIn:
+  RefreshTokenPath: D:\DevelopSpace\AliYunAutoSignIn\AliYunAutoSignIn\src\main\java\com\mosetian\AliYunAutoSignIn\Utils\RefreshToken.xml
