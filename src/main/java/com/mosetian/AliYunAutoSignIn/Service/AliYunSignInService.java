@@ -11,7 +11,7 @@ import java.util.Set;
 @Service
 public class AliYunSignInService {
 
-    public String manualExecution() throws Exception {
+    public void manualExecution() throws Exception {
         StringBuilder Msg = new StringBuilder();
         HashMap<String, String> refreshTokenMap = ProjectUtils.getRefreshToken();
         Set<String> NoteSet = refreshTokenMap.keySet();
@@ -43,7 +43,6 @@ public class AliYunSignInService {
             }
         }
         ServerChanAPI.sendMessage("阿里云盘签到", Msg.toString());
-        return "处理结束!";
     }
 
     public static boolean isNumeric(String str) {
